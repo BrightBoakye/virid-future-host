@@ -42,7 +42,7 @@ export const PredictForm = ({
       <Text title='Predict' size={TextSize.L} />
       <Input
         type='file'
-        label='Upload the file to predict'
+        label='Enhance your farming with AI insights: Upload Aerial or Satellite Image'
         name='file'
         accept='image/*'
         required
