@@ -7,7 +7,7 @@ const SupportPage = () => {
     <Page>
       <CardText
         title='Support'
-        text='Find Support at viridfuture@gmail.com'
+        text='Find Support at contact@viridfuture.com'
       />
     </Page>
   )
