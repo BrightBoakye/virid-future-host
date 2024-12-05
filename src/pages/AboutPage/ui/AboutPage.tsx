@@ -2,7 +2,7 @@ import React from 'react';
 import { Page } from 'widgets/Page';
 import pricingBackground from './pricingBackground.png';
 
-{/* About Page is now Subscription Page*/}
+{/*About Page is actually subscription page*/}
 const AboutPage = () => {
   const planContainerStyle = {
     display: 'flex',
@@ -30,12 +30,13 @@ const AboutPage = () => {
     borderRadius: '4px',
     cursor: 'pointer',
     fontWeight: 'bold', // Add this line to make the text bold
+    textDecoration: 'none', // Ensure the text isn't underlined
   };
 
   return (
     <Page background={pricingBackground}>
       <div style={planContainerStyle}>
-        <h2>Pricing Plans</h2>
+        <h2>Subscription Plans</h2>
         <div style={planStyle}>
           <h3>Basic Plan</h3>
           <p>
@@ -45,11 +46,11 @@ const AboutPage = () => {
             <br />
             Land use analysis recommendations
             <br />
-            {/*Price: $29/month*/} (7 day free trial for early subscribers)
+            {/* Price: $29/month */} (7 day free trial for early subscribers)
           </p>
-          {/* Replace the following with your actual Stripe Payment Link URL */}
-          <a href="https://buy.stripe.com/8wMbLq0CQaal4j63cc" style={subscribeButtonStyle}>
-            Subscribe
+          {/* Replace the Stripe link with your email */}
+          <a href="mailto:contact@viridfuture.com" style={subscribeButtonStyle}>
+            contact@viridfuture.com
           </a>
         </div>
 
@@ -66,6 +67,11 @@ const AboutPage = () => {
         </div>
       </div>
     </Page>
+  );
+};
+
+export default AboutPage;
+
   );
 };
 
